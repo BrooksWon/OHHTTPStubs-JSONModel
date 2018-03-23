@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ODg-Km-JnE"/>
+                        <viewControllerLayoutGuide type="bottom" id="2GK-YW-oDW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiB-aI-v54">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qpb-jB-iB0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="butnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kAw-Z4-K6y"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="placeholder" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b89-yr-ch4">
+                                <rect key="frame" x="0.0" y="40" width="375" height="564"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="b89-yr-ch4" secondAttribute="trailing" id="1cF-oR-9Nx"/>
+                            <constraint firstItem="iiB-aI-v54" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1gS-gk-59I"/>
+                            <constraint firstAttribute="trailing" secondItem="iiB-aI-v54" secondAttribute="trailing" id="44x-fV-8NB"/>
+                            <constraint firstItem="b89-yr-ch4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QdP-G0-S6d"/>
+                            <constraint firstItem="b89-yr-ch4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="40" id="d3o-9n-Beb"/>
+                            <constraint firstItem="2GK-YW-oDW" firstAttribute="top" secondItem="iiB-aI-v54" secondAttribute="bottom" id="iMd-Wt-DPX"/>
+                            <constraint firstItem="iiB-aI-v54" firstAttribute="top" secondItem="b89-yr-ch4" secondAttribute="bottom" constant="23" id="yO9-ey-ZSQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="b89-yr-ch4" id="WJP-yj-4r0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+</document>
